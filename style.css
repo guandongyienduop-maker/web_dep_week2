@@ -1,0 +1,62 @@
+h1{
+    color: blue;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.add-expense{
+    color: darkgreen;
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#your-expenses{
+    color: darkblue;
+    background-color: lightyellow;
+    padding: 10px;
+    border-radius: 5px;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+
+}
+table{border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+th, td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+tr:nth-child(even){
+    background-color: lightgray;
+}
+table tr:hover{
+    background-color: lightblue;
+}
+button{
+     cursor: pointer;
+}
+/* Descendant selector */
+#your-expense td{
+    padding: 10px 20px;
+    border-radius: 5px
+}
+/* Direct child selector */
+.add-expense > form{
+    font-weight: bold;
+}
+/*Negation pseudo-class*/
+ input:not([type="submit"]){     
+    border: 1px solid #ccc;
+}
+/*Focus state*/
+input:focus{
+    border-color: blue;
+    outline: none;
+}
